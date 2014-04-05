@@ -18,7 +18,9 @@
 		FAB866DF18EFA0EE002ADA6D /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = FAB866DC18EFA0EE002ADA6D /* 1.png */; };
 		FAB866E018EFA0EE002ADA6D /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = FAB866DD18EFA0EE002ADA6D /* 2.png */; };
 		FAB866E118EFA0EE002ADA6D /* 3.png in Resources */ = {isa = PBXBuildFile; fileRef = FAB866DE18EFA0EE002ADA6D /* 3.png */; };
-		FAF0919C18EF706A00335EC9 /* LCHotkey.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF0919B18EF706A00335EC9 /* LCHotkey.m */; };
+		FAB866E518EFA638002ADA6D /* LCHotkey.m in Sources */ = {isa = PBXBuildFile; fileRef = FAB866E418EFA638002ADA6D /* LCHotkey.m */; };
+		FAB866E818EFA641002ADA6D /* LCMouseTap.m in Sources */ = {isa = PBXBuildFile; fileRef = FAB866E718EFA641002ADA6D /* LCMouseTap.m */; };
+		FAB866EE18EFACD7002ADA6D /* LCEventOverlay.m in Sources */ = {isa = PBXBuildFile; fileRef = FAB866ED18EFACD7002ADA6D /* LCEventOverlay.m */; };
 		FAF091BE18EF83E900335EC9 /* LCToolPickerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF091B918EF83E900335EC9 /* LCToolPickerCell.m */; };
 		FAF091BF18EF83E900335EC9 /* LCToolPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF091BB18EF83E900335EC9 /* LCToolPickerView.m */; };
 		FAF091C018EF83E900335EC9 /* LCToolPickerWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF091BD18EF83E900335EC9 /* LCToolPickerWindow.m */; };
@@ -49,8 +51,12 @@
 		FAB866DC18EFA0EE002ADA6D /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
 		FAB866DD18EFA0EE002ADA6D /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
 		FAB866DE18EFA0EE002ADA6D /* 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3.png; sourceTree = "<group>"; };
-		FAF0919A18EF706A00335EC9 /* LCHotkey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCHotkey.h; sourceTree = "<group>"; };
-		FAF0919B18EF706A00335EC9 /* LCHotkey.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCHotkey.m; sourceTree = "<group>"; };
+		FAB866E318EFA638002ADA6D /* LCHotkey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCHotkey.h; sourceTree = "<group>"; };
+		FAB866E418EFA638002ADA6D /* LCHotkey.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCHotkey.m; sourceTree = "<group>"; };
+		FAB866E618EFA641002ADA6D /* LCMouseTap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCMouseTap.h; sourceTree = "<group>"; };
+		FAB866E718EFA641002ADA6D /* LCMouseTap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCMouseTap.m; sourceTree = "<group>"; };
+		FAB866EC18EFACD7002ADA6D /* LCEventOverlay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCEventOverlay.h; sourceTree = "<group>"; };
+		FAB866ED18EFACD7002ADA6D /* LCEventOverlay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCEventOverlay.m; sourceTree = "<group>"; };
 		FAF091B818EF83E900335EC9 /* LCToolPickerCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCToolPickerCell.h; sourceTree = "<group>"; };
 		FAF091B918EF83E900335EC9 /* LCToolPickerCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCToolPickerCell.m; sourceTree = "<group>"; };
 		FAF091BA18EF83E900335EC9 /* LCToolPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCToolPickerView.h; sourceTree = "<group>"; };
@@ -86,6 +92,7 @@
 		FA27F4D118D3F0C10042B6C9 = {
 			isa = PBXGroup;
 			children = (
+				FAB866E218EFA62D002ADA6D /* Misc Tools */,
 				FAB866DB18EFA0EE002ADA6D /* Images */,
 				FA27F4E318D3F0C10042B6C9 /* LassoCapture */,
 				FA27F4DC18D3F0C10042B6C9 /* Frameworks */,
@@ -132,8 +139,6 @@
 				FA27F4F018D3F0C10042B6C9 /* LCAppDelegate.m */,
 				FAF091C918EF8D2E00335EC9 /* LCPickerContext.h */,
 				FAF091CA18EF8D2E00335EC9 /* LCPickerContext.m */,
-				FAF0919A18EF706A00335EC9 /* LCHotkey.h */,
-				FAF0919B18EF706A00335EC9 /* LCHotkey.m */,
 				FAF091CF18EF9BDE00335EC9 /* LCPreferences.h */,
 				FAF091D018EF9BDE00335EC9 /* LCPreferences.m */,
 				FA27F4F218D3F0C10042B6C9 /* MainMenu.xib */,
@@ -162,6 +167,19 @@
 				FAB866DE18EFA0EE002ADA6D /* 3.png */,
 			);
 			path = Images;
+			sourceTree = "<group>";
+		};
+		FAB866E218EFA62D002ADA6D /* Misc Tools */ = {
+			isa = PBXGroup;
+			children = (
+				FAB866E318EFA638002ADA6D /* LCHotkey.h */,
+				FAB866E418EFA638002ADA6D /* LCHotkey.m */,
+				FAB866E618EFA641002ADA6D /* LCMouseTap.h */,
+				FAB866E718EFA641002ADA6D /* LCMouseTap.m */,
+				FAB866EC18EFACD7002ADA6D /* LCEventOverlay.h */,
+				FAB866ED18EFACD7002ADA6D /* LCEventOverlay.m */,
+			);
+			path = "Misc Tools";
 			sourceTree = "<group>";
 		};
 		FAF091B718EF83E900335EC9 /* Tool Picker */ = {
@@ -272,11 +290,13 @@
 				FAF091C818EF8A0500335EC9 /* LCToolList.m in Sources */,
 				FAF091C518EF85D500335EC9 /* LCDefaultTool.m in Sources */,
 				FAF091BE18EF83E900335EC9 /* LCToolPickerCell.m in Sources */,
-				FAF0919C18EF706A00335EC9 /* LCHotkey.m in Sources */,
+				FAB866E518EFA638002ADA6D /* LCHotkey.m in Sources */,
 				FAF091BF18EF83E900335EC9 /* LCToolPickerView.m in Sources */,
 				FAF091D118EF9BDE00335EC9 /* LCPreferences.m in Sources */,
+				FAB866EE18EFACD7002ADA6D /* LCEventOverlay.m in Sources */,
 				FA27F4EA18D3F0C10042B6C9 /* main.m in Sources */,
 				FAF091C018EF83E900335EC9 /* LCToolPickerWindow.m in Sources */,
+				FAB866E818EFA641002ADA6D /* LCMouseTap.m in Sources */,
 				FA27F4F118D3F0C10042B6C9 /* LCAppDelegate.m in Sources */,
 				FAF091D518EF9E3400335EC9 /* LCLassoTool.m in Sources */,
 				FAF091CB18EF8D2E00335EC9 /* LCPickerContext.m in Sources */,

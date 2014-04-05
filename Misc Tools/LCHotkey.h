@@ -16,6 +16,10 @@ typedef enum {
   LCHotkeyModifierShift = shiftKey
 } LCHotkeyModifier;
 
+/**
+ * Captures a specific user keystroke and notifies a target of
+ * the event.
+ */
 @interface LCHotkey : NSObject {
   EventHotKeyRef hotKeyRef;
   UInt32 uid;

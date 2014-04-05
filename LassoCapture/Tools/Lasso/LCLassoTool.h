@@ -6,9 +6,10 @@
 //  Copyright (c) 2014 Alex Nichol. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import "LCTool.h"
+#import "LCMouseTap.h"
 
-@interface LCLassoTool : NSObject {
+@interface LCLassoTool : NSObject <LCTool> {
   NSWindow * lassoWindow;
 }
 

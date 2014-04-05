@@ -11,14 +11,18 @@
 
 @implementation LCLassoTool
 
+@synthesize toolDelegate;
+
 + (NSString *)identifier {
   return LCToolIdentifierLasso;
 }
 
 - (void)startTool {
   NSRect frame = NSZeroRect;
+  NSScreen * zeroScreen = [NSScreen mainScreen];
   for (NSScreen * s in [NSScreen screens]) {
     NSRect rect = s.frame;
+    if (!rect.origin.x) zeroScreen = s;
     if (rect.origin.x < frame.origin.x) {
       frame.size.width += frame.origin.x - rect.origin.x;
       frame.origin.x = rect.origin.x;
@@ -35,7 +39,13 @@
     }
   }
   
-  
+  lassoWindow = [[NSWindow alloc] initWithContentRect:frame
+                                            styleMask:NSBorderlessWindowMask
+                                              backing:NSBackingStoreBuffered
+                                                defer:NO
+                                               screen:zeroScreen];
+  [lassoWindow setLevel:CGShieldingWindowLevel()];
+  // [lassoWindow makeKeyAndOrderFront:self];
 }
 
 - (void)cancelTool {

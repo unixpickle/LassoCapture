@@ -26,14 +26,15 @@
       cellRect.origin.x += cellSize + kLCToolPickerViewInnerPadding;
     }
     
+    current = 0;
     for (int i = 0; i < cells.count; i++) {
       if ([[cells[i] identifier] isEqualToString:identifier]) {
         current = i;
       }
     }
     
-    [cells[0] setSelected:YES];
-    [cells[0] setNeedsDisplay:YES];
+    [cells[current] setSelected:YES];
+    [cells[current] setNeedsDisplay:YES];
   }
   return self;
 }

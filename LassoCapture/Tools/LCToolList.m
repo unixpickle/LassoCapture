@@ -8,11 +8,13 @@
 
 #import "LCToolList.h"
 #import "LCDefaultTool.h"
+#import "LCLassoTool.h"
 
 @implementation LCToolList
 
 + (id<LCTool>)toolWithIdentifier:(NSString *)identifier {
-  NSDictionary * dictionary = @{LCToolIdentifierNormal: [LCDefaultTool class]};
+  NSDictionary * dictionary = @{LCToolIdentifierNormal: [LCDefaultTool class],
+                                LCToolIdentifierLasso: [LCLassoTool class]};
   return [[dictionary[identifier] alloc] init];
 }
 
