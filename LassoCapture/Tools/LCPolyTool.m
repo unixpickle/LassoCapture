@@ -45,7 +45,7 @@
   [cancelHotkey startHooking];
   
   [LCCursor gainPower];
-  lastCursor = [NSCursor currentCursor];
+  lastCursor = [NSCursor currentSystemCursor];
   [[NSCursor crosshairCursor] set];
 }
 

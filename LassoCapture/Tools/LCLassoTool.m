@@ -45,7 +45,7 @@
   [cancelHotkey startHooking];
   
   [LCCursor gainPower];
-  lastCursor = [NSCursor currentCursor];
+  lastCursor = [NSCursor currentSystemCursor];
   NSCursor * cursor = [[NSCursor alloc] initWithImage:[NSImage imageNamed:@"lasso.png"] hotSpot:NSMakePoint(3, 21)];
 	[cursor set];
 }

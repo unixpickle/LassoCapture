@@ -57,6 +57,7 @@ static NSMutableArray * toolWindows = nil;
 }
 
 - (void)orderOut:(id)sender {
+  [super orderOut:sender];
   [toolWindows removeObject:self];
 }
 
