@@ -10,9 +10,34 @@
 
 @implementation LCAppDelegate
 
-- (void)applicationDidFinishLaunching:(NSNotification *)aNotification
-{
-    // Insert code here to initialize your application
+- (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
+  hotKeys = @[[[LCHotkey alloc] init], [[LCHotkey alloc] init], [[LCHotkey alloc] init]];
+  for (int i = 0; i < 3; i++) {
+    LCHotkey * hk = hotKeys[i];
+    hk.modifiers = LCHotkeyModifierShift | LCHotkeyModifierCommand;
+    hk.keyCode = [LCHotkey keyCodeForChar:[NSString stringWithFormat:@"%c", '5' + i]];
+    hk.target = self;
+    hk.selector = NSSelectorFromString([NSString stringWithFormat:@"handleHotkey%d", i + 5]);
+    [hk startHooking];
+  }
+}
+
+- (void)handleHotkey5 {
+  [currentContext cancel];
+  currentContext = [[LCPickerContext alloc] init];
+  [currentContext startWithDestination:LCSaveDestinationClipboard screen:[NSScreen mainScreen]];
+}
+
+- (void)handleHotkey6 {
+  [currentContext cancel];
+  currentContext = [[LCPickerContext alloc] init];
+  [currentContext startWithDestination:LCSaveDestination1mage screen:[NSScreen mainScreen]];
+}
+
+- (void)handleHotkey7 {
+  [currentContext cancel];
+  currentContext = [[LCPickerContext alloc] init];
+  [currentContext startWithDestination:LCSaveDestinationDesktop screen:[NSScreen mainScreen]];
 }
 
 @end

@@ -7,9 +7,17 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "LCPickerContext.h"
 
-@interface LCAppDelegate : NSObject <NSApplicationDelegate>
+@interface LCAppDelegate : NSObject <NSApplicationDelegate> {
+  NSArray * hotKeys;
+  LCPickerContext * currentContext;
+}
 
-@property (assign) IBOutlet NSWindow *window;
+@property (assign) IBOutlet NSWindow * window;
+
+- (void)handleHotkey5;
+- (void)handleHotkey6;
+- (void)handleHotkey7;
 
 @end

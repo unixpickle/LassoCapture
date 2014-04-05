@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA0C370418D41DCE003EEAB8 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA0C370318D41DCE003EEAB8 /* Carbon.framework */; };
 		FA27F4DE18D3F0C10042B6C9 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA27F4DD18D3F0C10042B6C9 /* Cocoa.framework */; };
 		FA27F4E818D3F0C10042B6C9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FA27F4E618D3F0C10042B6C9 /* InfoPlist.strings */; };
 		FA27F4EA18D3F0C10042B6C9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FA27F4E918D3F0C10042B6C9 /* main.m */; };
@@ -14,23 +15,20 @@
 		FA27F4F118D3F0C10042B6C9 /* LCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FA27F4F018D3F0C10042B6C9 /* LCAppDelegate.m */; };
 		FA27F4F418D3F0C10042B6C9 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA27F4F218D3F0C10042B6C9 /* MainMenu.xib */; };
 		FA27F4F618D3F0C10042B6C9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA27F4F518D3F0C10042B6C9 /* Images.xcassets */; };
-		FA27F4FD18D3F0C10042B6C9 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA27F4FC18D3F0C10042B6C9 /* XCTest.framework */; };
-		FA27F4FE18D3F0C10042B6C9 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA27F4DD18D3F0C10042B6C9 /* Cocoa.framework */; };
-		FA27F50618D3F0C10042B6C9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FA27F50418D3F0C10042B6C9 /* InfoPlist.strings */; };
-		FA27F50818D3F0C10042B6C9 /* LassoCaptureTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FA27F50718D3F0C10042B6C9 /* LassoCaptureTests.m */; };
+		FA27F51E18D3FA580042B6C9 /* 3.png in Resources */ = {isa = PBXBuildFile; fileRef = FA27F51B18D3FA580042B6C9 /* 3.png */; };
+		FA27F51F18D3FA580042B6C9 /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = FA27F51C18D3FA580042B6C9 /* 2.png */; };
+		FA27F52018D3FA580042B6C9 /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = FA27F51D18D3FA580042B6C9 /* 1.png */; };
+		FAF0919C18EF706A00335EC9 /* LCHotkey.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF0919B18EF706A00335EC9 /* LCHotkey.m */; };
+		FAF091BE18EF83E900335EC9 /* LCToolPickerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF091B918EF83E900335EC9 /* LCToolPickerCell.m */; };
+		FAF091BF18EF83E900335EC9 /* LCToolPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF091BB18EF83E900335EC9 /* LCToolPickerView.m */; };
+		FAF091C018EF83E900335EC9 /* LCToolPickerWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF091BD18EF83E900335EC9 /* LCToolPickerWindow.m */; };
+		FAF091C518EF85D500335EC9 /* LCDefaultTool.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF091C418EF85D500335EC9 /* LCDefaultTool.m */; };
+		FAF091C818EF8A0500335EC9 /* LCToolList.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF091C718EF8A0500335EC9 /* LCToolList.m */; };
+		FAF091CB18EF8D2E00335EC9 /* LCPickerContext.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF091CA18EF8D2E00335EC9 /* LCPickerContext.m */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		FA27F4FF18D3F0C10042B6C9 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = FA27F4D218D3F0C10042B6C9 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = FA27F4D918D3F0C10042B6C9;
-			remoteInfo = LassoCapture;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
+		FA0C370318D41DCE003EEAB8 /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = System/Library/Frameworks/Carbon.framework; sourceTree = SDKROOT; };
 		FA27F4DA18D3F0C10042B6C9 /* LassoCapture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LassoCapture.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA27F4DD18D3F0C10042B6C9 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		FA27F4E018D3F0C10042B6C9 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -45,11 +43,25 @@
 		FA27F4F018D3F0C10042B6C9 /* LCAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCAppDelegate.m; sourceTree = "<group>"; };
 		FA27F4F318D3F0C10042B6C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		FA27F4F518D3F0C10042B6C9 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		FA27F4FB18D3F0C10042B6C9 /* LassoCaptureTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LassoCaptureTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA27F4FC18D3F0C10042B6C9 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		FA27F50318D3F0C10042B6C9 /* LassoCaptureTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LassoCaptureTests-Info.plist"; sourceTree = "<group>"; };
-		FA27F50518D3F0C10042B6C9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		FA27F50718D3F0C10042B6C9 /* LassoCaptureTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LassoCaptureTests.m; sourceTree = "<group>"; };
+		FA27F51B18D3FA580042B6C9 /* 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3.png; sourceTree = "<group>"; };
+		FA27F51C18D3FA580042B6C9 /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
+		FA27F51D18D3FA580042B6C9 /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
+		FAF0919A18EF706A00335EC9 /* LCHotkey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCHotkey.h; sourceTree = "<group>"; };
+		FAF0919B18EF706A00335EC9 /* LCHotkey.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCHotkey.m; sourceTree = "<group>"; };
+		FAF091B818EF83E900335EC9 /* LCToolPickerCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCToolPickerCell.h; sourceTree = "<group>"; };
+		FAF091B918EF83E900335EC9 /* LCToolPickerCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCToolPickerCell.m; sourceTree = "<group>"; };
+		FAF091BA18EF83E900335EC9 /* LCToolPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCToolPickerView.h; sourceTree = "<group>"; };
+		FAF091BB18EF83E900335EC9 /* LCToolPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCToolPickerView.m; sourceTree = "<group>"; };
+		FAF091BC18EF83E900335EC9 /* LCToolPickerWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCToolPickerWindow.h; sourceTree = "<group>"; };
+		FAF091BD18EF83E900335EC9 /* LCToolPickerWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCToolPickerWindow.m; sourceTree = "<group>"; };
+		FAF091C218EF842900335EC9 /* LCTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCTool.h; sourceTree = "<group>"; };
+		FAF091C318EF85D500335EC9 /* LCDefaultTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCDefaultTool.h; sourceTree = "<group>"; };
+		FAF091C418EF85D500335EC9 /* LCDefaultTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCDefaultTool.m; sourceTree = "<group>"; };
+		FAF091C618EF8A0500335EC9 /* LCToolList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCToolList.h; sourceTree = "<group>"; };
+		FAF091C718EF8A0500335EC9 /* LCToolList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCToolList.m; sourceTree = "<group>"; };
+		FAF091C918EF8D2E00335EC9 /* LCPickerContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCPickerContext.h; sourceTree = "<group>"; };
+		FAF091CA18EF8D2E00335EC9 /* LCPickerContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCPickerContext.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,16 +69,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA0C370418D41DCE003EEAB8 /* Carbon.framework in Frameworks */,
 				FA27F4DE18D3F0C10042B6C9 /* Cocoa.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FA27F4F818D3F0C10042B6C9 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				FA27F4FE18D3F0C10042B6C9 /* Cocoa.framework in Frameworks */,
-				FA27F4FD18D3F0C10042B6C9 /* XCTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,8 +80,8 @@
 		FA27F4D118D3F0C10042B6C9 = {
 			isa = PBXGroup;
 			children = (
+				FA27F51A18D3FA520042B6C9 /* Images */,
 				FA27F4E318D3F0C10042B6C9 /* LassoCapture */,
-				FA27F50118D3F0C10042B6C9 /* LassoCaptureTests */,
 				FA27F4DC18D3F0C10042B6C9 /* Frameworks */,
 				FA27F4DB18D3F0C10042B6C9 /* Products */,
 			);
@@ -87,7 +91,6 @@
 			isa = PBXGroup;
 			children = (
 				FA27F4DA18D3F0C10042B6C9 /* LassoCapture.app */,
-				FA27F4FB18D3F0C10042B6C9 /* LassoCaptureTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -95,6 +98,7 @@
 		FA27F4DC18D3F0C10042B6C9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FA0C370318D41DCE003EEAB8 /* Carbon.framework */,
 				FA27F4DD18D3F0C10042B6C9 /* Cocoa.framework */,
 				FA27F4FC18D3F0C10042B6C9 /* XCTest.framework */,
 				FA27F4DF18D3F0C10042B6C9 /* Other Frameworks */,
@@ -115,11 +119,17 @@
 		FA27F4E318D3F0C10042B6C9 /* LassoCapture */ = {
 			isa = PBXGroup;
 			children = (
+				FAF091C118EF83F900335EC9 /* Tools */,
+				FAF091B718EF83E900335EC9 /* Tool Picker */,
+				FA27F4E418D3F0C10042B6C9 /* Supporting Files */,
 				FA27F4EF18D3F0C10042B6C9 /* LCAppDelegate.h */,
 				FA27F4F018D3F0C10042B6C9 /* LCAppDelegate.m */,
+				FAF091C918EF8D2E00335EC9 /* LCPickerContext.h */,
+				FAF091CA18EF8D2E00335EC9 /* LCPickerContext.m */,
 				FA27F4F218D3F0C10042B6C9 /* MainMenu.xib */,
 				FA27F4F518D3F0C10042B6C9 /* Images.xcassets */,
-				FA27F4E418D3F0C10042B6C9 /* Supporting Files */,
+				FAF0919A18EF706A00335EC9 /* LCHotkey.h */,
+				FAF0919B18EF706A00335EC9 /* LCHotkey.m */,
 			);
 			path = LassoCapture;
 			sourceTree = "<group>";
@@ -136,22 +146,39 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		FA27F50118D3F0C10042B6C9 /* LassoCaptureTests */ = {
+		FA27F51A18D3FA520042B6C9 /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				FA27F50718D3F0C10042B6C9 /* LassoCaptureTests.m */,
-				FA27F50218D3F0C10042B6C9 /* Supporting Files */,
+				FA27F51B18D3FA580042B6C9 /* 3.png */,
+				FA27F51C18D3FA580042B6C9 /* 2.png */,
+				FA27F51D18D3FA580042B6C9 /* 1.png */,
 			);
-			path = LassoCaptureTests;
+			path = Images;
 			sourceTree = "<group>";
 		};
-		FA27F50218D3F0C10042B6C9 /* Supporting Files */ = {
+		FAF091B718EF83E900335EC9 /* Tool Picker */ = {
 			isa = PBXGroup;
 			children = (
-				FA27F50318D3F0C10042B6C9 /* LassoCaptureTests-Info.plist */,
-				FA27F50418D3F0C10042B6C9 /* InfoPlist.strings */,
+				FAF091B818EF83E900335EC9 /* LCToolPickerCell.h */,
+				FAF091B918EF83E900335EC9 /* LCToolPickerCell.m */,
+				FAF091BA18EF83E900335EC9 /* LCToolPickerView.h */,
+				FAF091BB18EF83E900335EC9 /* LCToolPickerView.m */,
+				FAF091BC18EF83E900335EC9 /* LCToolPickerWindow.h */,
+				FAF091BD18EF83E900335EC9 /* LCToolPickerWindow.m */,
 			);
-			name = "Supporting Files";
+			path = "Tool Picker";
+			sourceTree = "<group>";
+		};
+		FAF091C118EF83F900335EC9 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				FAF091C218EF842900335EC9 /* LCTool.h */,
+				FAF091C318EF85D500335EC9 /* LCDefaultTool.h */,
+				FAF091C418EF85D500335EC9 /* LCDefaultTool.m */,
+				FAF091C618EF8A0500335EC9 /* LCToolList.h */,
+				FAF091C718EF8A0500335EC9 /* LCToolList.m */,
+			);
+			path = Tools;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -174,24 +201,6 @@
 			productReference = FA27F4DA18D3F0C10042B6C9 /* LassoCapture.app */;
 			productType = "com.apple.product-type.application";
 		};
-		FA27F4FA18D3F0C10042B6C9 /* LassoCaptureTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = FA27F50E18D3F0C10042B6C9 /* Build configuration list for PBXNativeTarget "LassoCaptureTests" */;
-			buildPhases = (
-				FA27F4F718D3F0C10042B6C9 /* Sources */,
-				FA27F4F818D3F0C10042B6C9 /* Frameworks */,
-				FA27F4F918D3F0C10042B6C9 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				FA27F50018D3F0C10042B6C9 /* PBXTargetDependency */,
-			);
-			name = LassoCaptureTests;
-			productName = LassoCaptureTests;
-			productReference = FA27F4FB18D3F0C10042B6C9 /* LassoCaptureTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -201,11 +210,6 @@
 				CLASSPREFIX = LC;
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Alex Nichol";
-				TargetAttributes = {
-					FA27F4FA18D3F0C10042B6C9 = {
-						TestTargetID = FA27F4D918D3F0C10042B6C9;
-					};
-				};
 			};
 			buildConfigurationList = FA27F4D518D3F0C10042B6C9 /* Build configuration list for PBXProject "LassoCapture" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -221,7 +225,6 @@
 			projectRoot = "";
 			targets = (
 				FA27F4D918D3F0C10042B6C9 /* LassoCapture */,
-				FA27F4FA18D3F0C10042B6C9 /* LassoCaptureTests */,
 			);
 		};
 /* End PBXProject section */
@@ -231,18 +234,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA27F51F18D3FA580042B6C9 /* 2.png in Resources */,
+				FA27F51E18D3FA580042B6C9 /* 3.png in Resources */,
 				FA27F4E818D3F0C10042B6C9 /* InfoPlist.strings in Resources */,
 				FA27F4F618D3F0C10042B6C9 /* Images.xcassets in Resources */,
 				FA27F4EE18D3F0C10042B6C9 /* Credits.rtf in Resources */,
 				FA27F4F418D3F0C10042B6C9 /* MainMenu.xib in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FA27F4F918D3F0C10042B6C9 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				FA27F50618D3F0C10042B6C9 /* InfoPlist.strings in Resources */,
+				FA27F52018D3FA580042B6C9 /* 1.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,28 +251,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAF091C818EF8A0500335EC9 /* LCToolList.m in Sources */,
+				FAF091C518EF85D500335EC9 /* LCDefaultTool.m in Sources */,
+				FAF091BE18EF83E900335EC9 /* LCToolPickerCell.m in Sources */,
+				FAF0919C18EF706A00335EC9 /* LCHotkey.m in Sources */,
+				FAF091BF18EF83E900335EC9 /* LCToolPickerView.m in Sources */,
 				FA27F4EA18D3F0C10042B6C9 /* main.m in Sources */,
+				FAF091C018EF83E900335EC9 /* LCToolPickerWindow.m in Sources */,
 				FA27F4F118D3F0C10042B6C9 /* LCAppDelegate.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FA27F4F718D3F0C10042B6C9 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				FA27F50818D3F0C10042B6C9 /* LassoCaptureTests.m in Sources */,
+				FAF091CB18EF8D2E00335EC9 /* LCPickerContext.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		FA27F50018D3F0C10042B6C9 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = FA27F4D918D3F0C10042B6C9 /* LassoCapture */;
-			targetProxy = FA27F4FF18D3F0C10042B6C9 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		FA27F4E618D3F0C10042B6C9 /* InfoPlist.strings */ = {
@@ -299,14 +288,6 @@
 				FA27F4F318D3F0C10042B6C9 /* Base */,
 			);
 			name = MainMenu.xib;
-			sourceTree = "<group>";
-		};
-		FA27F50418D3F0C10042B6C9 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FA27F50518D3F0C10042B6C9 /* en */,
-			);
-			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -406,46 +387,6 @@
 			};
 			name = Release;
 		};
-		FA27F50F18D3F0C10042B6C9 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/LassoCapture.app/Contents/MacOS/LassoCapture";
-				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-					"$(inherited)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "LassoCapture/LassoCapture-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "LassoCaptureTests/LassoCaptureTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		FA27F51018D3F0C10042B6C9 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/LassoCapture.app/Contents/MacOS/LassoCapture";
-				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-					"$(inherited)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "LassoCapture/LassoCapture-Prefix.pch";
-				INFOPLIST_FILE = "LassoCaptureTests/LassoCaptureTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -465,14 +406,7 @@
 				FA27F50D18D3F0C10042B6C9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-		};
-		FA27F50E18D3F0C10042B6C9 /* Build configuration list for PBXNativeTarget "LassoCaptureTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				FA27F50F18D3F0C10042B6C9 /* Debug */,
-				FA27F51018D3F0C10042B6C9 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
