@@ -13,6 +13,9 @@
 @interface LCLassoTool : NSObject <LCTool, LCMouseTapDelegate> {
   LCMouseTap * mouseTap;
   LCEventOverlay * eventOverlay;
+  
+  CGMutablePathRef path;
+  BOOL isTapping;
 }
 
 @end

@@ -21,7 +21,8 @@ static CGEventRef mouse_event_callback(CGEventTapProxy proxy, CGEventType type, 
 - (void)start {
   CGEventMask mask = CGEventMaskBit(kCGEventMouseMoved)
     | CGEventMaskBit(kCGEventLeftMouseDown)
-    | CGEventMaskBit(kCGEventLeftMouseUp);
+    | CGEventMaskBit(kCGEventLeftMouseUp)
+    | CGEventMaskBit(kCGEventLeftMouseDragged);
   eventTap = CGEventTapCreate(kCGHIDEventTap, kCGHeadInsertEventTap, kCGEventTapOptionDefault,
                               mask, mouse_event_callback, (__bridge void *)self);
   if (!eventTap) {
@@ -37,6 +38,7 @@ static CGEventRef mouse_event_callback(CGEventTapProxy proxy, CGEventType type, 
 
 - (void)cancel {
   CFRunLoopRemoveSource(CFRunLoopGetCurrent(), runLoopSource, kCFRunLoopCommonModes);
+  CGEventTapEnable(eventTap, false);
   CFRelease(eventTap);
   CFRelease(runLoopSource);
 }
@@ -44,12 +46,12 @@ static CGEventRef mouse_event_callback(CGEventTapProxy proxy, CGEventType type, 
 #pragma mark - Private -
 
 - (void)handleEvent:(CGEventRef)evt type:(CGEventType)type {
-  NSPoint point = NSPointFromCGPoint(CGEventGetLocation(evt));
+  NSPoint point = NSPointFromCGPoint(CGEventGetUnflippedLocation(evt));
   if (type == kCGEventLeftMouseUp) {
     [self.delegate mouseTap:self mouseUp:point];
   } else if (type == kCGEventLeftMouseDown) {
     [self.delegate mouseTap:self mouseDown:point];
-  } else if (type == kCGEventMouseMoved) {
+  } else if (type == kCGEventMouseMoved || type == kCGEventLeftMouseDragged) {
     [self.delegate mouseTap:self movedToPoint:point];
   }
 }

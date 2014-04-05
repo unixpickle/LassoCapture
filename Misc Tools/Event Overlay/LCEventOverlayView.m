@@ -31,6 +31,7 @@
   CGContextTranslateCTM(context, -self.generalOffset.x, -self.generalOffset.y);
   CGContextAddPath(context, self.path);
   CGContextSetStrokeColorWithColor(context, [self.strokeColor CGColor]);
+  CGContextStrokePath(context);
   CGContextRestoreGState(context);
 }
 
