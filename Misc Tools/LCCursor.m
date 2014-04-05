@@ -23,4 +23,10 @@ extern CGError CGSSetConnectionProperty(CGSConnectionID cid,
                            kCFBooleanTrue);
 }
 
++ (void)losePower {
+  CGSSetConnectionProperty(CGSMainConnectionID(), CGSMainConnectionID(),
+                           (__bridge_retained CFStringRef)@"SetsCursorInBackground",
+                           kCFBooleanFalse);
+}
+
 @end

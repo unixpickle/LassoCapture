@@ -59,6 +59,7 @@
   eventOverlay = nil;
   
   [lastCursor set];
+  [LCCursor losePower];
 }
 
 - (void)dealloc {

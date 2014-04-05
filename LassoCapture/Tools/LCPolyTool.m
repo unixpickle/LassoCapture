@@ -57,6 +57,7 @@
   mouseTap = nil;
   eventOverlay = nil;
   [lastCursor set];
+  [LCCursor losePower];
 }
 
 - (void)enterPressed {

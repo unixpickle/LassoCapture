@@ -11,5 +11,6 @@
 @interface LCCursor : NSObject
 
 + (void)gainPower;
++ (void)losePower;
 
 @end
