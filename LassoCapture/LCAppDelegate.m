@@ -11,6 +11,8 @@
 @implementation LCAppDelegate
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
+  [[NSUserNotificationCenter defaultUserNotificationCenter] setDelegate:self];
+  
   hotKeys = @[[[LCHotkey alloc] init], [[LCHotkey alloc] init], [[LCHotkey alloc] init]];
   for (int i = 0; i < 3; i++) {
     LCHotkey * hk = hotKeys[i];
@@ -38,6 +40,17 @@
   [currentContext cancel];
   currentContext = [[LCPickerContext alloc] init];
   [currentContext startWithDestination:LCSaveDestinationDesktop screen:[NSScreen mainScreen]];
+}
+
+- (void)userNotificationCenter:(NSUserNotificationCenter *)center didActivateNotification:(NSUserNotification *)notification {
+  NSString * url = notification.userInfo[@"url"];
+  if (url) {
+    [[NSWorkspace sharedWorkspace] openURL:[NSURL URLWithString:url]];
+  }
+}
+
+- (BOOL)userNotificationCenter:(NSUserNotificationCenter *)center shouldPresentNotification:(NSUserNotification *)notification {
+  return YES;
 }
 
 @end

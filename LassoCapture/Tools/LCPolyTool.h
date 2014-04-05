@@ -1,24 +1,26 @@
 //
-//  LCLassoTool.h
+//  LCPolyTool.h
 //  LassoCapture
 //
-//  Created by Alex Nichol on 4/4/14.
+//  Created by Alex Nichol on 4/5/14.
 //  Copyright (c) 2014 Alex Nichol. All rights reserved.
 //
 
+#import <Foundation/Foundation.h>
 #import "LCTool.h"
 #import "LCMouseTap.h"
 #import "LCEventOverlay.h"
 #import "LCHotkey.h"
 
-@interface LCLassoTool : NSObject <LCTool, LCMouseTapDelegate> {
+@interface LCPolyTool : NSObject <LCTool, LCMouseTapDelegate> {
+  CGMutablePathRef path;
+  
+  BOOL hasStarted;
+  CGPoint initialPoint;
+  
   LCMouseTap * mouseTap;
   LCEventOverlay * eventOverlay;
   LCHotkey * cancelHotkey;
-  
-  CGMutablePathRef path;
-  BOOL isTapping;
-  BOOL didDrag;
 }
 
 @end

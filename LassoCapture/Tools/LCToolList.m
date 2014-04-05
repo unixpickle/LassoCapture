@@ -9,12 +9,14 @@
 #import "LCToolList.h"
 #import "LCDefaultTool.h"
 #import "LCLassoTool.h"
+#import "LCPolyTool.h"
 
 @implementation LCToolList
 
 + (id<LCTool>)toolWithIdentifier:(NSString *)identifier {
   NSDictionary * dictionary = @{LCToolIdentifierNormal: [LCDefaultTool class],
-                                LCToolIdentifierLasso: [LCLassoTool class]};
+                                LCToolIdentifierLasso: [LCLassoTool class],
+                                LCToolIdentifierPoly: [LCPolyTool class]};
   return [[dictionary[identifier] alloc] init];
 }
 

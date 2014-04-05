@@ -11,6 +11,10 @@
 @interface LCEventOverlayView : NSView
 
 @property (readwrite) CGPathRef path;
+
+@property (readwrite) CGPoint currentPoint;
+@property (readwrite) BOOL hasCurrentPoint;
+
 @property (readwrite) NSPoint generalOffset;
 @property (nonatomic, retain) NSColor * strokeColor;
 

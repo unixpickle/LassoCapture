@@ -52,6 +52,18 @@
     [view setPath:path];
     [view setStrokeColor:self.color];
     [view setNeedsDisplay:YES];
+    [view setHasCurrentPoint:NO];
+  }
+}
+
+- (void)redraw:(CGPathRef)path currentPoint:(CGPoint)p {
+  for (NSWindow * window in windows) {
+    LCEventOverlayView * view = window.contentView;
+    [view setPath:path];
+    [view setStrokeColor:self.color];
+    [view setNeedsDisplay:YES];
+    [view setCurrentPoint:p];
+    [view setHasCurrentPoint:YES];
   }
 }
 

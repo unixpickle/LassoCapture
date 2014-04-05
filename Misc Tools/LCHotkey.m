@@ -68,7 +68,8 @@ static NSInteger hkUid = 0;
     @"B": @(11),
     @"D": @(2),
     @"3": @(20),
-    @"Tab": @(0x30)
+    @"Tab": @(0x30),
+    @"Escape": @(0x35)
   };
   return [map[str] intValue];
 }

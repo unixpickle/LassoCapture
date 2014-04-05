@@ -61,5 +61,8 @@ static CGEventRef mouse_event_callback(CGEventTapProxy proxy, CGEventType type, 
 static CGEventRef mouse_event_callback(CGEventTapProxy proxy, CGEventType type, CGEventRef event, void * userData) {
   LCMouseTap * tap = (__bridge LCMouseTap *)userData;
   [tap handleEvent:event type:type];
+  if (type == kCGEventLeftMouseUp || type == kCGEventLeftMouseDown) {
+    return NULL;
+  }
   return event;
 }

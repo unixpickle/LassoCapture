@@ -9,7 +9,7 @@
 #import <Cocoa/Cocoa.h>
 #import "LCPickerContext.h"
 
-@interface LCAppDelegate : NSObject <NSApplicationDelegate> {
+@interface LCAppDelegate : NSObject <NSApplicationDelegate, NSUserNotificationCenterDelegate> {
   NSArray * hotKeys;
   LCPickerContext * currentContext;
 }

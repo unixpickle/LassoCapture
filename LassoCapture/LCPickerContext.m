@@ -8,6 +8,7 @@
 
 #import "LCPickerContext.h"
 #import "LCPreferences.h"
+#import "LC1mage.h"
 
 @interface LCPickerContext (Private)
 
@@ -83,7 +84,27 @@
     [pb declareTypes:types owner:self];
     [pb setData:[image TIFFRepresentation] forType:NSTIFFPboardType];
   } else if (destination == LCSaveDestination1mage) {
-    // TODO: do this
+    [LC1mage startUpload:image completed:^(NSError * err, NSURL * theURL) {
+      NSLog(@"got upload response %@ %@", err, theURL);
+      if (err) {
+        NSUserNotification * notification = [[NSUserNotification alloc] init];
+        notification.title = @"Failed to upload";
+        notification.informativeText = [err localizedDescription];
+        notification.soundName = NSUserNotificationDefaultSoundName;
+        [[NSUserNotificationCenter defaultUserNotificationCenter] deliverNotification:notification];
+      } else {
+        [[NSPasteboard generalPasteboard] declareTypes:@[NSStringPboardType] owner:nil];
+        [[NSPasteboard generalPasteboard] setString:[theURL description]
+                                            forType:NSStringPboardType];
+        
+        NSUserNotification * notification = [[NSUserNotification alloc] init];
+        notification.title = @"Uploaded";
+        notification.informativeText = @"Click to open in browser";
+        notification.soundName = NSUserNotificationDefaultSoundName;
+        notification.userInfo = @{@"url": [theURL description]};
+        [[NSUserNotificationCenter defaultUserNotificationCenter] deliverNotification:notification];
+      }
+    }];
   }
 }
 
@@ -115,7 +136,15 @@
 }
 
 - (void)endPressed {
+  if (!timeout) {
+    if ([tool respondsToSelector:@selector(enterPressed)]) {
+      [tool enterPressed];
+    }
+    return;
+  }
+  
   [timeout invalidate];
+  timeout = nil;
   [self timerTick:nil];
 }
 

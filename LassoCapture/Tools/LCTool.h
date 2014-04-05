@@ -23,4 +23,7 @@
 - (void)startTool;
 - (void)cancelTool;
 
+@optional
+- (void)enterPressed;
+
 @end

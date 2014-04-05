@@ -27,9 +27,15 @@
   
   // translate the path
   CGContextSaveGState(context);
+  CGContextSetLineWidth(context, 5);
+  CGContextSetLineCap(context, kCGLineCapRound);
+  CGContextSetLineJoin(context, kCGLineJoinRound);
   CGContextBeginPath(context);
   CGContextTranslateCTM(context, -self.generalOffset.x, -self.generalOffset.y);
   CGContextAddPath(context, self.path);
+  if (self.hasCurrentPoint) {
+    CGContextAddLineToPoint(context, self.currentPoint.x, self.currentPoint.y);
+  }
   CGContextSetStrokeColorWithColor(context, [self.strokeColor CGColor]);
   CGContextStrokePath(context);
   CGContextRestoreGState(context);

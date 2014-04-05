@@ -23,5 +23,6 @@
 - (void)begin;
 - (void)cancel;
 - (void)redraw:(CGPathRef)path;
+- (void)redraw:(CGPathRef)path currentPoint:(CGPoint)pt;
 
 @end
