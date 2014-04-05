@@ -15,9 +15,9 @@
 		FA27F4F118D3F0C10042B6C9 /* LCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FA27F4F018D3F0C10042B6C9 /* LCAppDelegate.m */; };
 		FA27F4F418D3F0C10042B6C9 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA27F4F218D3F0C10042B6C9 /* MainMenu.xib */; };
 		FA27F4F618D3F0C10042B6C9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA27F4F518D3F0C10042B6C9 /* Images.xcassets */; };
-		FA27F51E18D3FA580042B6C9 /* 3.png in Resources */ = {isa = PBXBuildFile; fileRef = FA27F51B18D3FA580042B6C9 /* 3.png */; };
-		FA27F51F18D3FA580042B6C9 /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = FA27F51C18D3FA580042B6C9 /* 2.png */; };
-		FA27F52018D3FA580042B6C9 /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = FA27F51D18D3FA580042B6C9 /* 1.png */; };
+		FAB866DF18EFA0EE002ADA6D /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = FAB866DC18EFA0EE002ADA6D /* 1.png */; };
+		FAB866E018EFA0EE002ADA6D /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = FAB866DD18EFA0EE002ADA6D /* 2.png */; };
+		FAB866E118EFA0EE002ADA6D /* 3.png in Resources */ = {isa = PBXBuildFile; fileRef = FAB866DE18EFA0EE002ADA6D /* 3.png */; };
 		FAF0919C18EF706A00335EC9 /* LCHotkey.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF0919B18EF706A00335EC9 /* LCHotkey.m */; };
 		FAF091BE18EF83E900335EC9 /* LCToolPickerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF091B918EF83E900335EC9 /* LCToolPickerCell.m */; };
 		FAF091BF18EF83E900335EC9 /* LCToolPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF091BB18EF83E900335EC9 /* LCToolPickerView.m */; };
@@ -25,8 +25,8 @@
 		FAF091C518EF85D500335EC9 /* LCDefaultTool.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF091C418EF85D500335EC9 /* LCDefaultTool.m */; };
 		FAF091C818EF8A0500335EC9 /* LCToolList.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF091C718EF8A0500335EC9 /* LCToolList.m */; };
 		FAF091CB18EF8D2E00335EC9 /* LCPickerContext.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF091CA18EF8D2E00335EC9 /* LCPickerContext.m */; };
-		FAF091CE18EF9BD200335EC9 /* LCLassoTool.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF091CD18EF9BD200335EC9 /* LCLassoTool.m */; };
 		FAF091D118EF9BDE00335EC9 /* LCPreferences.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF091D018EF9BDE00335EC9 /* LCPreferences.m */; };
+		FAF091D518EF9E3400335EC9 /* LCLassoTool.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF091D418EF9E3400335EC9 /* LCLassoTool.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,9 +46,9 @@
 		FA27F4F318D3F0C10042B6C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		FA27F4F518D3F0C10042B6C9 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		FA27F4FC18D3F0C10042B6C9 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		FA27F51B18D3FA580042B6C9 /* 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3.png; sourceTree = "<group>"; };
-		FA27F51C18D3FA580042B6C9 /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
-		FA27F51D18D3FA580042B6C9 /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
+		FAB866DC18EFA0EE002ADA6D /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
+		FAB866DD18EFA0EE002ADA6D /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
+		FAB866DE18EFA0EE002ADA6D /* 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3.png; sourceTree = "<group>"; };
 		FAF0919A18EF706A00335EC9 /* LCHotkey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCHotkey.h; sourceTree = "<group>"; };
 		FAF0919B18EF706A00335EC9 /* LCHotkey.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCHotkey.m; sourceTree = "<group>"; };
 		FAF091B818EF83E900335EC9 /* LCToolPickerCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCToolPickerCell.h; sourceTree = "<group>"; };
@@ -64,10 +64,10 @@
 		FAF091C718EF8A0500335EC9 /* LCToolList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCToolList.m; sourceTree = "<group>"; };
 		FAF091C918EF8D2E00335EC9 /* LCPickerContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCPickerContext.h; sourceTree = "<group>"; };
 		FAF091CA18EF8D2E00335EC9 /* LCPickerContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCPickerContext.m; sourceTree = "<group>"; };
-		FAF091CC18EF9BD200335EC9 /* LCLassoTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCLassoTool.h; sourceTree = "<group>"; };
-		FAF091CD18EF9BD200335EC9 /* LCLassoTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCLassoTool.m; sourceTree = "<group>"; };
 		FAF091CF18EF9BDE00335EC9 /* LCPreferences.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCPreferences.h; sourceTree = "<group>"; };
 		FAF091D018EF9BDE00335EC9 /* LCPreferences.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCPreferences.m; sourceTree = "<group>"; };
+		FAF091D318EF9E3400335EC9 /* LCLassoTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCLassoTool.h; sourceTree = "<group>"; };
+		FAF091D418EF9E3400335EC9 /* LCLassoTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCLassoTool.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,7 +86,7 @@
 		FA27F4D118D3F0C10042B6C9 = {
 			isa = PBXGroup;
 			children = (
-				FA27F51A18D3FA520042B6C9 /* Images */,
+				FAB866DB18EFA0EE002ADA6D /* Images */,
 				FA27F4E318D3F0C10042B6C9 /* LassoCapture */,
 				FA27F4DC18D3F0C10042B6C9 /* Frameworks */,
 				FA27F4DB18D3F0C10042B6C9 /* Products */,
@@ -154,12 +154,12 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		FA27F51A18D3FA520042B6C9 /* Images */ = {
+		FAB866DB18EFA0EE002ADA6D /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				FA27F51B18D3FA580042B6C9 /* 3.png */,
-				FA27F51C18D3FA580042B6C9 /* 2.png */,
-				FA27F51D18D3FA580042B6C9 /* 1.png */,
+				FAB866DC18EFA0EE002ADA6D /* 1.png */,
+				FAB866DD18EFA0EE002ADA6D /* 2.png */,
+				FAB866DE18EFA0EE002ADA6D /* 3.png */,
 			);
 			path = Images;
 			sourceTree = "<group>";
@@ -180,15 +180,23 @@
 		FAF091C118EF83F900335EC9 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				FAF091D218EF9E3400335EC9 /* Lasso */,
 				FAF091C218EF842900335EC9 /* LCTool.h */,
 				FAF091C318EF85D500335EC9 /* LCDefaultTool.h */,
 				FAF091C418EF85D500335EC9 /* LCDefaultTool.m */,
-				FAF091CC18EF9BD200335EC9 /* LCLassoTool.h */,
-				FAF091CD18EF9BD200335EC9 /* LCLassoTool.m */,
 				FAF091C618EF8A0500335EC9 /* LCToolList.h */,
 				FAF091C718EF8A0500335EC9 /* LCToolList.m */,
 			);
 			path = Tools;
+			sourceTree = "<group>";
+		};
+		FAF091D218EF9E3400335EC9 /* Lasso */ = {
+			isa = PBXGroup;
+			children = (
+				FAF091D318EF9E3400335EC9 /* LCLassoTool.h */,
+				FAF091D418EF9E3400335EC9 /* LCLassoTool.m */,
+			);
+			path = Lasso;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -244,13 +252,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA27F51F18D3FA580042B6C9 /* 2.png in Resources */,
-				FA27F51E18D3FA580042B6C9 /* 3.png in Resources */,
+				FAB866E018EFA0EE002ADA6D /* 2.png in Resources */,
 				FA27F4E818D3F0C10042B6C9 /* InfoPlist.strings in Resources */,
 				FA27F4F618D3F0C10042B6C9 /* Images.xcassets in Resources */,
 				FA27F4EE18D3F0C10042B6C9 /* Credits.rtf in Resources */,
 				FA27F4F418D3F0C10042B6C9 /* MainMenu.xib in Resources */,
-				FA27F52018D3FA580042B6C9 /* 1.png in Resources */,
+				FAB866E118EFA0EE002ADA6D /* 3.png in Resources */,
+				FAB866DF18EFA0EE002ADA6D /* 1.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,10 +275,10 @@
 				FAF0919C18EF706A00335EC9 /* LCHotkey.m in Sources */,
 				FAF091BF18EF83E900335EC9 /* LCToolPickerView.m in Sources */,
 				FAF091D118EF9BDE00335EC9 /* LCPreferences.m in Sources */,
-				FAF091CE18EF9BD200335EC9 /* LCLassoTool.m in Sources */,
 				FA27F4EA18D3F0C10042B6C9 /* main.m in Sources */,
 				FAF091C018EF83E900335EC9 /* LCToolPickerWindow.m in Sources */,
 				FA27F4F118D3F0C10042B6C9 /* LCAppDelegate.m in Sources */,
+				FAF091D518EF9E3400335EC9 /* LCLassoTool.m in Sources */,
 				FAF091CB18EF8D2E00335EC9 /* LCPickerContext.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
