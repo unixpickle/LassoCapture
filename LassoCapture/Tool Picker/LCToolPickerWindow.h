@@ -16,5 +16,6 @@
 @property (readonly) LCToolPickerView * view;
 
 - (id)initOnScreen:(NSScreen *)screen identifier:(NSString *)identifier;
+- (void)fadeOut;
 
 @end

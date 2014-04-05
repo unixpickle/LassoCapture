@@ -22,6 +22,7 @@ typedef enum {
   LCToolPickerWindow * window; // current menu picker
   id<LCTool> tool;
   LCHotkey * hotKey; // tab hotkey
+  LCHotkey * endHotKey; // to end the session
   NSTimer * timeout; // disable timeout
   LCSaveDestination destination;
 }

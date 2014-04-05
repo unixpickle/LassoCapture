@@ -47,4 +47,10 @@
   return self;
 }
 
+- (void)fadeOut {
+  [[NSAnimationContext currentContext] setDuration:0.2];
+  [self.animator setAlphaValue:0];
+  [self performSelector:@selector(orderOut:) withObject:nil afterDelay:0.2];
+}
+
 @end
