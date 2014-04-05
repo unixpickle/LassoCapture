@@ -17,6 +17,7 @@
   
   BOOL hasStarted;
   CGPoint initialPoint;
+  NSCursor * lastCursor;
   
   LCMouseTap * mouseTap;
   LCEventOverlay * eventOverlay;

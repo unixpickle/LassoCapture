@@ -9,6 +9,7 @@
 #import "LCLassoTool.h"
 #import "LCToolList.h"
 #import "LCScreenshotCropper.h"
+#import "LCCursor.h"
 
 @interface LCLassoTool (Private)
 
@@ -42,6 +43,11 @@
   cancelHotkey.target = self;
   cancelHotkey.selector = @selector(cancelPressed);
   [cancelHotkey startHooking];
+  
+  [LCCursor gainPower];
+  lastCursor = [NSCursor currentCursor];
+  NSCursor * cursor = [[NSCursor alloc] initWithImage:[NSImage imageNamed:@"lasso.png"] hotSpot:NSMakePoint(3, 21)];
+	[cursor set];
 }
 
 - (void)cancelTool {
@@ -51,6 +57,8 @@
   cancelHotkey = nil;
   mouseTap = nil;
   eventOverlay = nil;
+  
+  [lastCursor set];
 }
 
 - (void)dealloc {

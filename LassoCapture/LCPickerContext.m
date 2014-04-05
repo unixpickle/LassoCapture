@@ -85,7 +85,6 @@
     [pb setData:[image TIFFRepresentation] forType:NSTIFFPboardType];
   } else if (destination == LCSaveDestination1mage) {
     [LC1mage startUpload:image completed:^(NSError * err, NSURL * theURL) {
-      NSLog(@"got upload response %@ %@", err, theURL);
       if (err) {
         NSUserNotification * notification = [[NSUserNotification alloc] init];
         notification.title = @"Failed to upload";
@@ -123,6 +122,7 @@
 - (void)tabPressed {
   if (window) {
     [timeout invalidate];
+    timeout = nil;
     [window.view goToNext];
     [self menuChanged];
     return;
@@ -155,6 +155,7 @@
   [tool setToolDelegate:self];
   [tool startTool];
   [LCPreferences setLastToolIdentifier:identifier];
+  NSAssert(!timeout, @"last timeout must be gone");
   timeout = [NSTimer scheduledTimerWithTimeInterval:1 target:self
                                            selector:@selector(timerTick:)
                                            userInfo:nil repeats:NO];

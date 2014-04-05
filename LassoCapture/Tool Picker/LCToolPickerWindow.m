@@ -9,6 +9,8 @@
 #import "LCToolPickerWindow.h"
 #import "LCToolList.h"
 
+static NSMutableArray * toolWindows = nil;
+
 @implementation LCToolPickerWindow
 
 - (id)initOnScreen:(NSScreen *)screen identifier:(NSString *)identifier {
@@ -43,6 +45,7 @@
                                          identifier:identifier];
     self.contentView = _view;
     [self setLevel:CGShieldingWindowLevel()];
+    [self setReleasedWhenClosed:NO];
   }
   return self;
 }
@@ -51,6 +54,16 @@
   [[NSAnimationContext currentContext] setDuration:0.2];
   [self.animator setAlphaValue:0];
   [self performSelector:@selector(orderOut:) withObject:nil afterDelay:0.2];
+}
+
+- (void)orderOut:(id)sender {
+  [toolWindows removeObject:self];
+}
+
+- (void)makeKeyAndOrderFront:(id)sender {
+  [super makeKeyAndOrderFront:sender];
+  if (!toolWindows) toolWindows = [[NSMutableArray alloc] init];
+  [toolWindows addObject:self];
 }
 
 @end

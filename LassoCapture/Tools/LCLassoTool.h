@@ -15,6 +15,7 @@
   LCMouseTap * mouseTap;
   LCEventOverlay * eventOverlay;
   LCHotkey * cancelHotkey;
+  NSCursor * lastCursor;
   
   CGMutablePathRef path;
   BOOL isTapping;

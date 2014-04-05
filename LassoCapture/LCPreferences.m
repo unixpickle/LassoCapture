@@ -13,7 +13,6 @@
 
 + (NSString *)lastToolIdentifier {
   NSString * string = [[NSUserDefaults standardUserDefaults] objectForKey:@"tool"];
-  NSLog(@"last tool is %@", string);
   return string ?: LCToolIdentifierNormal;
 }
 

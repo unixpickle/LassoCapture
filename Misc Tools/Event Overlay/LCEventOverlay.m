@@ -23,7 +23,7 @@
       LCEventOverlayView * view = [[LCEventOverlayView alloc] init];
       view.generalOffset = s.frame.origin;
       window.contentView = view;
-      [window setLevel:CGShieldingWindowLevel()];
+      [window setLevel:NSScreenSaverWindowLevel];
       [window setOpaque:NO];
       [window setBackgroundColor:[NSColor clearColor]];
       [window setIgnoresMouseEvents:NO];

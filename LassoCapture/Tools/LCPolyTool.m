@@ -9,6 +9,7 @@
 #import "LCPolyTool.h"
 #import "LCToolList.h"
 #import "LCScreenshotCropper.h"
+#import "LCCursor.h"
 
 @interface LCPolyTool (Private)
 
@@ -42,6 +43,10 @@
   cancelHotkey.target = self;
   cancelHotkey.selector = @selector(cancelPressed);
   [cancelHotkey startHooking];
+  
+  [LCCursor gainPower];
+  lastCursor = [NSCursor currentCursor];
+  [[NSCursor crosshairCursor] set];
 }
 
 - (void)cancelTool {
@@ -51,6 +56,7 @@
   cancelHotkey = nil;
   mouseTap = nil;
   eventOverlay = nil;
+  [lastCursor set];
 }
 
 - (void)enterPressed {
@@ -80,7 +86,7 @@
     initialPoint = point;
     CGPathMoveToPoint(path, NULL, point.x, point.y);
   } else {
-    if (sqrt(pow(point.x - initialPoint.x, 2) + pow(point.y - initialPoint.y, 2)) < 5) {
+    if (sqrt(pow(point.x - initialPoint.x, 2) + pow(point.y - initialPoint.y, 2)) < 7) {
       return [self enterPressed];
     }
     CGPathAddLineToPoint(path, NULL, point.x, point.y);

@@ -43,11 +43,12 @@
   boundingBox.size.height *= scale;
   boundingBox.origin.x *= scale;
   boundingBox.origin.y *= scale;
+  if (boundingBox.size.width == 0 || boundingBox.size.height == 0) return nil;
+  
   CGImageRef img = [dest croppedImageWithFrame:boundingBox];
   NSImage * final = [[NSImage alloc] initWithCGImage:img
                                                 size:NSMakeSize(CGImageGetWidth(img),
                                                                 CGImageGetHeight(img))];
-  
   return final;
 }
 
