@@ -8,9 +8,11 @@
 
 #import "LCTool.h"
 #import "LCMouseTap.h"
+#import "LCEventOverlay.h"
 
-@interface LCLassoTool : NSObject <LCTool> {
-  NSWindow * lassoWindow;
+@interface LCLassoTool : NSObject <LCTool, LCMouseTapDelegate> {
+  LCMouseTap * mouseTap;
+  LCEventOverlay * eventOverlay;
 }
 
 @end
