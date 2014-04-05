@@ -7,6 +7,7 @@
 //
 
 #import "LCPickerContext.h"
+#import "LCPreferences.h"
 
 @interface LCPickerContext (Private)
 
@@ -24,7 +25,7 @@
   mainScreen = sc;
   destination = dest;
   
-  tool = [LCToolList toolWithIdentifier:LCToolIdentifierNormal];
+  tool = [LCToolList toolWithIdentifier:[LCPreferences lastToolIdentifier]];
   [tool setToolDelegate:self];
   [tool startTool];
   
@@ -124,7 +125,7 @@
   tool = [LCToolList toolWithIdentifier:identifier];
   [tool setToolDelegate:self];
   [tool startTool];
-  
+  [LCPreferences setLastToolIdentifier:identifier];
   timeout = [NSTimer scheduledTimerWithTimeInterval:1 target:self
                                            selector:@selector(timerTick:)
                                            userInfo:nil repeats:NO];

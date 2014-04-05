@@ -25,6 +25,8 @@
 		FAF091C518EF85D500335EC9 /* LCDefaultTool.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF091C418EF85D500335EC9 /* LCDefaultTool.m */; };
 		FAF091C818EF8A0500335EC9 /* LCToolList.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF091C718EF8A0500335EC9 /* LCToolList.m */; };
 		FAF091CB18EF8D2E00335EC9 /* LCPickerContext.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF091CA18EF8D2E00335EC9 /* LCPickerContext.m */; };
+		FAF091CE18EF9BD200335EC9 /* LCLassoTool.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF091CD18EF9BD200335EC9 /* LCLassoTool.m */; };
+		FAF091D118EF9BDE00335EC9 /* LCPreferences.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF091D018EF9BDE00335EC9 /* LCPreferences.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +64,10 @@
 		FAF091C718EF8A0500335EC9 /* LCToolList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCToolList.m; sourceTree = "<group>"; };
 		FAF091C918EF8D2E00335EC9 /* LCPickerContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCPickerContext.h; sourceTree = "<group>"; };
 		FAF091CA18EF8D2E00335EC9 /* LCPickerContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCPickerContext.m; sourceTree = "<group>"; };
+		FAF091CC18EF9BD200335EC9 /* LCLassoTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCLassoTool.h; sourceTree = "<group>"; };
+		FAF091CD18EF9BD200335EC9 /* LCLassoTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCLassoTool.m; sourceTree = "<group>"; };
+		FAF091CF18EF9BDE00335EC9 /* LCPreferences.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCPreferences.h; sourceTree = "<group>"; };
+		FAF091D018EF9BDE00335EC9 /* LCPreferences.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCPreferences.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,10 +132,12 @@
 				FA27F4F018D3F0C10042B6C9 /* LCAppDelegate.m */,
 				FAF091C918EF8D2E00335EC9 /* LCPickerContext.h */,
 				FAF091CA18EF8D2E00335EC9 /* LCPickerContext.m */,
-				FA27F4F218D3F0C10042B6C9 /* MainMenu.xib */,
-				FA27F4F518D3F0C10042B6C9 /* Images.xcassets */,
 				FAF0919A18EF706A00335EC9 /* LCHotkey.h */,
 				FAF0919B18EF706A00335EC9 /* LCHotkey.m */,
+				FAF091CF18EF9BDE00335EC9 /* LCPreferences.h */,
+				FAF091D018EF9BDE00335EC9 /* LCPreferences.m */,
+				FA27F4F218D3F0C10042B6C9 /* MainMenu.xib */,
+				FA27F4F518D3F0C10042B6C9 /* Images.xcassets */,
 			);
 			path = LassoCapture;
 			sourceTree = "<group>";
@@ -175,6 +183,8 @@
 				FAF091C218EF842900335EC9 /* LCTool.h */,
 				FAF091C318EF85D500335EC9 /* LCDefaultTool.h */,
 				FAF091C418EF85D500335EC9 /* LCDefaultTool.m */,
+				FAF091CC18EF9BD200335EC9 /* LCLassoTool.h */,
+				FAF091CD18EF9BD200335EC9 /* LCLassoTool.m */,
 				FAF091C618EF8A0500335EC9 /* LCToolList.h */,
 				FAF091C718EF8A0500335EC9 /* LCToolList.m */,
 			);
@@ -256,6 +266,8 @@
 				FAF091BE18EF83E900335EC9 /* LCToolPickerCell.m in Sources */,
 				FAF0919C18EF706A00335EC9 /* LCHotkey.m in Sources */,
 				FAF091BF18EF83E900335EC9 /* LCToolPickerView.m in Sources */,
+				FAF091D118EF9BDE00335EC9 /* LCPreferences.m in Sources */,
+				FAF091CE18EF9BD200335EC9 /* LCLassoTool.m in Sources */,
 				FA27F4EA18D3F0C10042B6C9 /* main.m in Sources */,
 				FAF091C018EF83E900335EC9 /* LCToolPickerWindow.m in Sources */,
 				FA27F4F118D3F0C10042B6C9 /* LCAppDelegate.m in Sources */,
